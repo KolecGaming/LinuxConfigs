@@ -15,6 +15,7 @@ alias cat="bat"
 alias rider="exec ~/Programs/JetBrainsRider-2024.3/bin/rider.sh"
 eval $(thefuck --alias)
 alias wt="exec ~/Games/WarThunder/launcher"
+eval "$(starship init zsh)"
 
 # Device managing
 alias mountdvd="sudo mount /dev/sr0 /mnt/dvdDrive"
@@ -29,6 +30,7 @@ alias showcda="cd /run/user/1000/gvfs/cdda:host=sr0/ && ls"
 alias ls="ls --color=auto"
 alias grep="grep --color=auto"
 alias pacman="pacman --color=auto"
+alias yay="yay --color=auto"
 
 # Auto run when opening new terminal session
 cff
