@@ -16,12 +16,10 @@ alias :w="systemctl suspend"
 # Running local AI
 alias deepseek="ollama run deepseek-r1:8B"
 
-# Checking installation age
-alias age="birth_install=$(stat -c %W /);
-   current=$(date +%s);
-   time_progression=$((current - birth_install));
-   days_difference=$((time_progression / 86400));
-   echo $days_difference days"
+# Quick system update
+alias qupdate="sudo pacman -Syu --noconfirm;
+   yay -Syu --noconfirm;
+   flatpak update -y"
 
 # Programs / Games
 alias ff="fastfetch -l small"
